@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Information about product</title>
+    <link rel="stylesheet" href="../css/backtotop.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/InformationAboutProduct.css">
+    <link rel="stylesheet" href="../icon/themify-icons/themify-icons.css">
+    <link rel="stylesheet" href="../css/backtotop.css">
+    <link rel="stylesheet" href="../css/productInforcart.css">
+
+    <script src="../js/jquery-3.3.1.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/Login.js"></script>
+    <script src="../js/SignUp.js"></script>
+</head>
+
+<body>
+    <div id="wrapper">
+        <div id="header">
+            <div class="top_header">
+                <div class="header_absolute">
+                    <nav class="navbar-collapse">
+                        <ul class="navbar-nav nav">
+                            <li class="logo"><img src="../img/LOGO-removebg-preview.png" alt="" usemap="#home"></li>
+                            <map name="home">
+                                <area shape="rect" coords="1,1,248,27" href="../Main-html/MainTech.html" alt="">
+                            </map>
+                            <li class="search">
+                                <form action="">
+                                    <input type="search" id="txtSearch" placeholder="Search the site..." size="40">
+                                    <a href="../Main-html/MainTech.html"><i class="ti-search"></i></a>
+                                </form>
+                            </li>
+                            <li><button type="button" id="myLogin"><i class="ti-user"></i> Log in</button></li>
+                            <li><button type="button" id="mySignup"><i class="ti-stamp"></i> Sign up</button></li>
+                            <li>
+                                <p class="carticon"><i class="ti-shopping-cart"></i></p>
+                            </li>
+                        </ul>
+                    </nav>
+                    <!-- menu -->
+                    <div class="nav">
+                        <ul id="menu">
+                            <li><a href="#">LAPTOP</a>
+                                <ul id="submenu">
+                                    <li><a href="../html-SubList/listGaming.html">Gaming</a></li>
+                                    <li><a href="../html-SubList/listStudent.html">For Student</a></li>
+                                    <li><a href="../html-SubList/listOffice.html">Office</a></li>
+                                    <li><a href="../html-SubList/listMac.html">Macbook</a></li>
+                                    <li><a href="../html-SubList/listGraphic.html">Technical Graphics</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">PC</a>
+                            <li><a href="#">COMPONENTS</a>
+                                <ul id="submenu">
+                                    <li><a href="#">Mouse</a></li>
+                                    <li><a href="#">Keyboard</a></li>
+                                    <li><a href="#">Shockproof Bag</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">DEVICE</a>
+                                <ul id="submenu">
+                                    <li><a href="#">Loudspeaker</a></li>
+                                    <li><a href="#">Micro</a></li>
+                                    <li><a href="#">Headphone</a></li>
+                                    <li><a href="#">USB</a></li>
+                                    <li><a href="#">Disk</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">INTRODUCTION</a>
+                                <ul id="submenu">
+                                    <li><a href="#">MEMBERS OF TEAM</a></li>
+                                    <li><a href="https://www.facebook.com/callmemivh">TRUONG MINH DAT</a></li>
+                                    <li><a href="https://www.facebook.com/profile.php?id=100046984711384">PHUNG THI MY
+                                            DIEU</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><a href="#">CONTACT </a>
+                                <ul id="submenu">
+                                    <li><a href="#">Phone Contact</a></li>
+                                    <li><a href="#">Email</a></li>
+                                    <li><a href="#">Zalo</a></li>
+                                    <li><a href="#">Facebook</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- modal đk, đn -->
+                <div class="modal fade" id="myModalDK" role="dialog">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal">X</button>
+                                <h1 style="text-align: center;">SIGN UP ACCOUNT</h1>
+                            </div>
+                            <div class="modal-body">
+                                <form role="form" class="form-horizontal">
+                                    <div class="form-group">
+                                        <div id="thongbao" class="text-danger" style="text-align: center;"></div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="txtHT" class="control-label col-xs-3">FULL NAME</label>
+                                        <div class="col-md-9">
+                                            <input type="text" class="form-control" id="txtHT"
+                                                placeholder="Enter your full name">
+                                            <span id="tbTen" class="text-danger">*</span>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="txtDC" class="control-label col-xs-3">ADDRESS</label>
+                                        <div class="col-md-9">
+                                            <input type="text" class="form-control" id="txtDC"
+                                                placeholder="Enter your address">
+                                            <span id="tbDC" class="text-danger">*</span>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="txtEmail" class="control-label col-xs-3">EMAIL</label>
+                                        <div class="col-md-9">
+                                            <input type="email" class="form-control" id="txtEmail"
+                                                placeholder="Enter your email">
+                                            <span id="tbEmail" class="text-danger">*</span>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="txtSDT" class="control-label col-xs-3">PHONE NUMBER</label>
+                                        <div class="col-md-9">
+                                            <input type="text" class="form-control" id="txtSDT"
+                                                placeholder="Enter your phone number">
+                                            <span id="tbSDT" class="text-danger">*</span>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="txtPw" class="control-label col-xs-3">PASSWORD</label>
+                                        <div class="col-md-9">
+                                            <input type="text" class="form-control" id="txtPw"
+                                                placeholder="Create your password account">
+                                            <span id="tbPw" class="text-danger">*</span>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="txtPw" class="control-label col-xs-3">PASSWORD CONFIRM</label>
+                                        <div class="col-md-9">
+                                            <input type="text" class="form-control" id="txtPwC"
+                                                placeholder="Create your password confirm account">
+                                            <span id="tbPwC" class="text-danger">*</span>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" id="btnSaveDK" class="btn btn-success btn-block"
+                                    style=" background-color:  rgb(188, 31, 177);">Sign up</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal fade" id="myModalDN" role="dialog">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal">X</button>
+                                <h1 style="text-align: center;">LOG IN ACCOUNT</h1>
+                            </div>
+                            <div class="modal-body">
+                                <form role="form" class="form-horizontal">
+                                    <div class="form-group">
+                                        <div id="thongbao" class="text-danger" style="text-align: center;"></div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="txtEmailDN" class="control-label col-xs-3">USERNAME/EMAIL</label>
+                                        <div class="col-md-9">
+                                            <input type="email" class="form-control" id="txtEmailDN"
+                                                placeholder="Enter your username or email">
+                                            <span id="tbEmailDN" class="text-danger">*</span>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="txtMK" class="control-label col-xs-3">PASSWORD</label>
+                                        <div class="col-md-9">
+                                            <input type="text" class="form-control" id="txtMK"
+                                                placeholder="Enter your password">
+                                            <span id="tbMK" class="text-danger">*</span>
+                                        </div>
+                                    </div>
+
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" id="btnSaveDN" class="btn btn-success btn-block"
+                                    style="background-color: rgb(157, 0, 157);">Log in</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="section">
+            <div class="col-md-6">
+                <div id="adv">
+                    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                        <!-- Indicators -->
+                        <ol class="carousel-indicators">
+                            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                            <li data-target="#myCarousel" data-slide-to="1"></li>
+                            <li data-target="#myCarousel" data-slide-to="2"></li>
+                            <li data-target="#myCarousel" data-slide-to="3"></li>
+                            <li data-target="#myCarousel" data-slide-to="4"></li>
+                            <li data-target="#myCarousel" data-slide-to="5"></li>
+                            <li data-target="#myCarousel" data-slide-to="6"></li>
+                            <li data-target="#myCarousel" data-slide-to="7"></li>
+                            <li data-target="#myCarousel" data-slide-to="8"></li>
+                        </ol>
+                        <!-- Wrapper for slides -->
+                        <div class="carousel-inner">
+                            <div class="item active">
+                                <img src="../img/Student/sdt2/0.jpg" alt="quang cao" usemap="#aa">
+                                <map name=""></map>
+                            </div>
+                            <div class="item">
+                                <img src="../img/Student/sdt2/1.jpg" alt="quang cao">
+                            </div>
+                            <div class="item">
+                                <img src="../img/Student/sdt2/2.jpg" alt="quang cao">
+                            </div>
+                            <div class="item">
+                                <img src="../img/Student/sdt2/3.jpg" alt="quang cao">
+                            </div>
+                            <div class="item">
+                                <img src="../img/Student/sdt2/4.jpg" alt="quang cao">
+                            </div>
+                            <div class="item">
+                                <img src="../img/Student/sdt2/5.jpg" alt="quang cao">
+                            </div>
+                            <div class="item">
+                                <img src="../img/Student/sdt2/6.jpg" alt="quang cao">
+                            </div>
+                            <div class="item">
+                                <img src="../img/Student/sdt2/7.jpg" alt="quang cao">
+                            </div>
+                            <div class="item">
+                                <img src="../img/Student/sdt2/8.jpg" alt="quang cao">
+                            </div>
+                        </div>
+                        <!-- Left and right controls  -->
+                        <div class="left carousel-control" href="#myCarousel" data-slide="prev">
+                            <i class="ti-angle-double-left" style="color: rgb(241, 61, 11); font-size: 42px;"></i>
+                            <span class="sr-only">Previous</span>
+                        </div>
+                        <div class="right carousel-control" href="#myCarousel" data-slide="next">
+                            <i class="ti-angle-double-right" style="color: rgb(241, 61, 11); font-size: 42px;"></i>
+                            <span class="sr-only">Next</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item-lap">
+                <div class="col-md-6">
+                    <h3 style="font-weight: bold; margin-top: -5px;">Dell Vostro 5410</h3>
+                    <h4 style="font-weight: bold;">Laptop Dell Vostro 5410 i5 11320H/8GB/512GB/Office H&S/Win11
+                        (V4I5214W1)</h4>
+                    <h5><i class="ti-check" style="color: green; font-weight: bold;"></i> Bảo hành chính hãng 24 tháng.
+                    </h5>
+                    <h5><i class="ti-check" style="color: green; font-weight: bold;"></i> Hỗ trợ đổi mới trong 7 ngày.
+                    </h5>
+                    <h5><i class="ti-check" style="color: green; font-weight: bold;"></i> Windows bản quyền tích hợp.
+                    </h5>
+                    <h4 style="color: red; font-weight: bold;"><u>Khuyến mãi</u></h4>
+                    <h5 style="font-weight: bold; color: cornflowerblue;"><i class="ti-gift"
+                            style="color: rgb(227, 110, 15);"></i> ĐỒNG HỒ KIM NỮ DÂY DA LACOSTE 2001089 TRẮNG</h5>
+                    <h5 style="font-weight: bold; color: cornflowerblue;"><i class="ti-gift"
+                            style="color: rgb(227, 110, 15);"></i> ĐỒNG HỒ KIM NỮ DÂY DA LACOSTE 2001124 ĐEN</h5>
+                    <h5 style="font-weight: bold;"><i class="ti-gift" style="color: rgb(227, 110, 15);"></i> Tặng Balo
+                        Laptop </h5>
+                    <h5 style="font-weight: bold;"><i class="ti-gift" style="color: rgb(227, 110, 15);"></i> Bút cảm
+                        biến <i>(kèm máy)</i></h5>
+                    <h4 style="color: red; font-weight: bold;"><u>ƯU ĐÃI KHI MUA KÈM LAPTOP TẠI MAIN TECH</u></h4>
+                    <h5 style="font-weight: bold;"><i class="ti-star" style="color: rgb(227, 110, 15);"></i> Giảm ngay
+                        100.000đ khi mua chuột TUF Gaming M3, Logitech G203, G102.</h5>
+                    <h5 style="font-weight: bold;"><i class="ti-star" style="color: rgb(227, 110, 15);"></i> Giảm ngay
+                        100.000đ khi mua thêm màn hình máy tính</h5>
+                    <h5 style="font-weight: bold;"><i class="ti-star" style="color: rgb(227, 110, 15);"></i> Giảm ngay
+                        100.000đ khi mua thêm Ram.</h5>
+                    <h5 style="font-weight: bold;"><i class="ti-star" style="color: rgb(227, 110, 15);"></i> Giảm ngay
+                        100,000đ khi mua kèm Microsoft Office <i>(01/10 - 31/12/2022)</i></h5>
+                    <h5>Và còn nhiều ưu đãi khác tại cửa hàng trên toàn quốc.</h5>
+                    <h5 style="font-weight: bold;">Hỗ trợ trả góp MPOS (Thẻ tín dụng), HDSAISON (Xem chi tiết).</h5>
+                    <h4>Giá Cũ: <u style="color: gray;">23.990.000đ</u></h4>
+                    <h4>Giá Khuyến Mãi: <b style="color: red;"><span>21.490.000đ</span></b></h4>
+                    <br>
+                    <button type="button" class="buy-lap-btn" style="margin-left: 0; margin-bottom: 20px;">Đặt mua</i></button>
+
+                    <h2 style="text-indent: 15px; font-weight:bold;">Chi tiết cấu hình sản phẩm</h2><br>
+                        <div>
+                            <div class="col-md-4" style="font-weight: bold;">CPU</div>
+                            <div class="cl-md-6">i7, 12700H, 2.30Hz</div><br>
+                        <div><hr>
+                            <div class="col-md-4"style="font-weight: bold;">RAM</div>
+                            <div class="cl-md-6">16 GB, LPDDR5&nbsp;(8 GB Onboard + 8 GB Onboard), 5200 MHz</div><br>
+                        </div><hr>
+                        <div>
+                            <div class="col-md-4"style="font-weight: bold;">Ổ cứng</div>
+                            <div class="cl-md-6">512 GB SSD NVMe PCIe (Có thể tháo ra, lắp thanh khác tối đa 1 TB)</div><br>
+                        </div><hr>
+                        <div>
+                            <div class="col-md-4"style="font-weight: bold;">Màn hình</div>
+                            <div class="cl-md-6">13.4, WUXGA (1920 x 1200, 120Hz</div><br>
+                        </div><hr>
+                        <div>
+                            <div class="col-md-4"style="font-weight: bold;">Card màn hình</div>
+                            <div class="cl-md-6">Card rời, RTX 3050 4GB</div><br>
+                        </div><hr>
+                        <div>
+                            <div class="col-md-4"style="font-weight: bold;">Cổng kết nối</div>
+                            <div class="cl-md-6">USB 2.0</div><br>
+                        </div>
+                        <div>
+                            <div class="col-md-4">&nbsp;</div>
+                            <div class="cl-md-6">1x USB 3.2 Gen 2 Type-C support DisplayPort / power delivery / G-SYNC</div><br>
+                        <div>
+                            <div class="col-md-4">&nbsp;</div>
+                            <div class="cl-md-6">1x ROG XG Mobile Interface</div><br>
+                        </div>
+                        <div>
+                            <div class="col-md-4">&nbsp;</div>
+                            <div class="cl-md-6">Thunderbolt 4 USB-C</div><br>
+                        </div>
+                        <div>
+                            <div class="col-md-4">&nbsp;</div>
+                            <div class="cl-md-6">Jack tai nghe 3.5 mm</div><br>
+                        </div><hr>
+                        <div>
+                            <div class="col-md-4"style="font-weight: bold;">Đặc biệt</div>
+                            <div class="cl-md-6">Có màn hình cảm ứng, có đèn bàn phím</div><br>
+                        </div><hr>
+                        <div>
+                            <div class="col-md-4"style="font-weight: bold;">Hệ điều hành</div>
+                            <div class="cl-md-6">Windows 11 Home SL</div><br>
+                        </div><hr>
+                        <div>
+                            <div class="col-md-4"style="font-weight: bold;">Thiết kế</div>
+                            <div class="cl-md-6">Vỏ nhựa - nắp lưng bằng kim loại</div><br>
+                        </div><hr>
+                        <div>
+                            <div class="col-md-4"style="font-weight: bold;">Kích thước, khối lượng</div>
+                            <div class="cl-md-6">Dài 302 mm - Rộng 204 mm - Dày 12 mm - Nặng 1.18 kg</div><br>
+                        </div><hr>
+                        <div>
+                            <div class="col-md-4"style="font-weight: bold;">Thời điểm ra mắt</div>
+                            <div class="cl-md-6">2022</div><br>
+                        </div><hr>
+                        <button type="button" class="buy-lap-btn" style="margin-left: 250px; margin-bottom: 100px;"><a href="https://www.thegioididong.com/laptop/asus-gaming-rog-flow-z13-gz301z-i7-ld110w#top-tskt">Xem thêm</a></button>
+               
+                </div>
+            </div>
+        </div>
+        <section class="cart">
+            <div class="cartclose">
+                <i class="ti-close"></i>
+            </div>
+            <h2 style="color: rgb(53, 7, 145);">YOUR CART</h2>
+            <form action="">
+                <table>
+                    <thead>
+                        <tr style="color:rgb(185, 59, 177);font-weight: bold;font-size:15px;">
+                            <th>Product</th>
+                            <th style="text-align:center ;">Price</th>
+                            <th>Quantity</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+                <!-- <div class="price_total">
+                        <p style="font-weight:bold;text-align: right;color: rgb(53, 7, 145);font-size: 20px;">Price Total:
+                            <span>0đ</span>
+                        </p>
+                    </div> -->
+                <button type="button" style="background-color: rgb(207, 53, 207);"><a href="../Main-html/MainTech.html"
+                        style="color:rgb(255, 255, 255);">Buy</a></button>
+            </form>
+        </section>
+        <script src="../js/cartshow.js"></script>
+        <script src="../js/cart.js"></script>
+        <div id="footer">
+            <div id="nhomThucHien">
+                <h5>MEMBERS OF TEAM</h5>
+                <h6><a href="#">Truong Minh Dat</a></h6>
+                <h6><a href="#">Phung Thi My Dieu</a></h6>
+            </div>
+            <div id="hoTroKhachHang">
+                <h5>CUSTUMER SERVICES</h5>
+                <h6><a href="../Main-html/MainTech.html">Shopping Online Tutorials</a></h6>
+                <h6><a href="../Main-html/MainTech.html">Payment Tutorials</a></h6>
+                <h6><a href="../Main-html/MainTech.html">Learn About Installment Purchase</a></h6>
+            </div>
+            <div id="chinhSachChung">
+                <h5>POLICY</h5>
+                <h6><a href="#">Warranty Policy</a></h6>
+                <h6><a href="#">Return Policy</a></h6>
+                <h6><a href="#">Operational Regulations</a></h6>
+                <h6><a href="#">Business Sales</a></h6>
+            </div>
+            <div id="socail">
+                <h5 style="padding-right: 30px;">SOCAIL MEDIA</h5>
+                <a href="#"><i class="ti-facebook"></i></a>
+                <a href="#"><i class="ti-instagram"></i>
+                    <a href="#"><i class="ti-twitter-alt"></i></a>
+                    <a href="#"><i class="ti-skype"></i></a>
+                    <br><br>
+                    <a href="#"><i class="ti-yahoo"></i></a>
+                    <a href="#"><i class="ti-wordpress"></i></a>
+                    <a href="#"><i class="ti-youtube"></i></a>
+                    <a href="#"><i class="ti-google"></i></a>
+            </div>
+            <div id="contact">
+                <h5>CONTACT FOR WORK</h5>
+                <p><a href="#">0925430713</p></a>
+                <p><a href="#">0866485827</p></a>
+            </div>
+        </div>
+        <!-- back to top -->
+        <div>
+            <button id="myBtnbtt" title="Back top top"><img src='../img/icon-256x256.png' title='Back to top'
+                    width='50px' height="50px" /></button>
+        </div>
+        <script src="../js/backtotop.js"></script>
+    </div>
+
+</body>
+
+</html>

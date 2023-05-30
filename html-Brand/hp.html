@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laptop HP </title>
+</head>
+
+<body>
+
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../CSS/MainTech.css">
+    <link rel="stylesheet" href="../icon/themify-icons/themify-icons.css">
+    <link rel="stylesheet" href="../css/backtotop.css">
+    <link rel="stylesheet" href="../css/danhsachlapcon.css">
+    <link rel="stylesheet" href="../css/alllap.css">
+
+    <script src="../js/jquery-3.3.1.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/Login.js"></script>
+    <script src="../js/SignUp.js"></script>
+    <div id="wrapper">
+        <!-- header -->
+        <header>
+            <div class="top_header">
+                <div class="header_absolute">
+                    <nav class="navbar-collapse">
+                        <ul class="navbar-nav nav">
+                            <li class="logo"><img src="../img/LOGO-removebg-preview.png" alt="" usemap="#home"></li>
+                            <map name="home">
+                                <area shape="rect" coords="1,1,248,27" href="../Main-html/MainTech.html" alt="">
+                            </map>
+                            <li class="search">
+                                <form action="">
+                                    <input type="search" id="txtSearch" placeholder="Search the site..." size="40">
+                                    <a href="../Main-html/MainTech.html"><i class="ti-search"></i></a>
+                                </form>
+                            </li>
+                            <li><button type="button" id="myLogin"><i class="ti-user"></i> Log in</button></li>
+                            <li><button type="button" id="mySignup"><i class="ti-stamp"></i> Sign up</button></li>
+                            <li>
+                                <p class="carticon"><i class="ti-shopping-cart"></i></p>
+                            </li>
+                        </ul>
+                    </nav>
+                    <!-- menu -->
+                    <div class="nav">
+                        <ul id="menu">
+                            <li><a href="../Main-html/alllap.html">LAPTOP</a>
+                                <ul id="submenu">
+                                    <li><a href="../html-Brand/dell.html">Dell</a></li>
+                                    <li><a href="../html-Brand/asus.html">Asus</a></li>
+                                    <li><a href="../html-Brand/hp.html">HP</a></li>
+                                    <li><a href="../html-SubList/listMac.html">Macbook</a></li>
+                                    <li><a href="../html-Brand/lenovo.html">Lenovo</a></li>
+                                    <li><a href="../html-Brand/acer.html">Acer</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">PC</a>
+                            <li><a href="#">COMPONENTS</a>
+                                <ul id="submenu">
+                                    <li><a href="#">Mouse</a></li>
+                                    <li><a href="#">Keyboard</a></li>
+                                    <li><a href="#">Shockproof Bag</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">DEVICE</a>
+                                <ul id="submenu">
+                                    <li><a href="#">Loudspeaker</a></li>
+                                    <li><a href="#">Micro</a></li>
+                                    <li><a href="#">Headphone</a></li>
+                                    <li><a href="#">USB</a></li>
+                                    <li><a href="#">Disk</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">CONTACT </a>
+                                <ul id="submenu">
+                                    <li><a href="#footer">Phone Contact</a></li>
+                                    <li><a href="#footer">Email</a></li>
+                                    <li><a href="#footer">Zalo</a></li>
+                                    <li><a href="#footer">Facebook</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="../Main-html/MainTech.html">BACK TO HOME</a>
+
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- modal đk, đn -->
+                <div class="modal fade" id="myModalDK" role="dialog">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal">X</button>
+                                <h1 style="text-align: center;">SIGN UP ACCOUNT</h1>
+                            </div>
+                            <div class="modal-body">
+                                <form role="form" class="form-horizontal">
+                                    <div class="form-group">
+                                        <div id="thongbao" class="text-danger" style="text-align: center;"></div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="txtHT" class="control-label col-xs-3">FULL NAME</label>
+                                        <div class="col-md-9">
+                                            <input type="text" class="form-control" id="txtHT"
+                                                placeholder="Enter your full name">
+                                            <span id="tbTen" class="text-danger">*</span>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="txtDC" class="control-label col-xs-3">ADDRESS</label>
+                                        <div class="col-md-9">
+                                            <input type="text" class="form-control" id="txtDC"
+                                                placeholder="Enter your address">
+                                            <span id="tbDC" class="text-danger">*</span>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="txtEmail" class="control-label col-xs-3">EMAIL</label>
+                                        <div class="col-md-9">
+                                            <input type="email" class="form-control" id="txtEmail"
+                                                placeholder="Enter your email">
+                                            <span id="tbEmail" class="text-danger">*</span>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="txtSDT" class="control-label col-xs-3">PHONE NUMBER</label>
+                                        <div class="col-md-9">
+                                            <input type="text" class="form-control" id="txtSDT"
+                                                placeholder="Enter your phone number">
+                                            <span id="tbSDT" class="text-danger">*</span>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="txtPw" class="control-label col-xs-3">PASSWORD</label>
+                                        <div class="col-md-9">
+                                            <input type="text" class="form-control" id="txtPw"
+                                                placeholder="Create your password account">
+                                            <span id="tbPw" class="text-danger">*</span>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="txtPw" class="control-label col-xs-3">PASSWORD CONFIRM</label>
+                                        <div class="col-md-9">
+                                            <input type="text" class="form-control" id="txtPwC"
+                                                placeholder="Create your password confirm account">
+                                            <span id="tbPwC" class="text-danger">*</span>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" id="btnSaveDK" class="btn btn-success btn-block"
+                                    style=" background-color:  rgb(188, 31, 177);">Sign up</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal fade" id="myModalDN" role="dialog">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal">X</button>
+                                <h1 style="text-align: center;">LOG IN ACCOUNT</h1>
+                            </div>
+                            <div class="modal-body">
+                                <form role="form" class="form-horizontal">
+                                    <div class="form-group">
+                                        <div id="thongbao" class="text-danger" style="text-align: center;"></div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="txtEmailDN" class="control-label col-xs-3">USERNAME/EMAIL</label>
+                                        <div class="col-md-9">
+                                            <input type="email" class="form-control" id="txtEmailDN"
+                                                placeholder="Enter your username or email">
+                                            <span id="tbEmailDN" class="text-danger">*</span>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="txtMK" class="control-label col-xs-3">PASSWORD</label>
+                                        <div class="col-md-9">
+                                            <input type="text" class="form-control" id="txtMK"
+                                                placeholder="Enter your password">
+                                            <span id="tbMK" class="text-danger">*</span>
+                                        </div>
+                                    </div>
+
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" id="btnSaveDN" class="btn btn-success btn-block"
+                                    style="background-color: rgb(157, 0, 157);">Log in</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- QUẢNG CÁO -->
+    </div>
+    <!-- section -->
+    <section class="cart">
+        <div class="cartclose">
+            <i class="ti-close"></i>
+        </div>
+        <h2 style="color: rgb(53, 7, 145);">YOUR CART</h2>
+        <form action="">
+            <table>
+                <thead>
+                    <tr style="color:rgb(185, 59, 177);font-weight: bold;font-size: 15px;">
+                        <th>Product</th>
+                        <th style="text-align:center ;">Price</th>
+                        <th>Quantity</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
+            <button type="button" style="background-color: rgb(207, 53, 207);"><a href="../Main-html/MainTech.html"
+                    style="color:rgb(255, 255, 255);">Buy</a></button>
+        </form>
+    </section>
+    <script src="../js/cartshow.js"></script>
+    <div id="hang">
+        <h3>LAPTOP BRAND</h3>
+        <a href="../html-Brand/dell.html"><img src="../img/nhan-hang/dell.png" alt=""></a>
+        <a href="../html-Brand/asus.html"><img src="../img/nhan-hang/asus.png" alt=""></a>
+        <a href="../html-Brand/hp.html"><img src="../img/nhan-hang/hp.png" alt=""></a>
+        <a href="../html-SubList/listMac.html"><img src="../img/nhan-hang/mac.png" alt=""></a>
+        <a href="../html-Brand/lenovo.html"><img src="../img/nhan-hang/lenovo.png" alt=""></a>
+        <a href="../html-Brand/acer.html"><img src="../img/nhan-hang/acer.png" alt=""></a>
+    </div>
+    <div id="productList">
+        <h1 style="margin-left:660px;">LAPTOP HP</h1>
+    </div>
+    <div id="section">
+        <div class="DanhSachLapTop">
+            <div class="listLap">
+                <div class="item-lap">
+                    <div class="slotlap">
+                        <div id="lapg">
+                            <img src="../img/hp/hp1.jpg" alt="ERROR" width="90%" class="img-lap" height="230px"usemap="#dell6">
+                            <map name="dell6">
+                                <area shape="rect" coords="0,1500,900,0" href="../html_ProductInfo/dellVostro5410.html"
+                                    alt="thongtinsanpham">
+                            </map>
+                    </div>
+                        </div>
+                        <div class="body-lap">
+                            <h3 class="heading-lap">HP Envy X360 13 bf0090TU i7</h3>
+                            <p class="desc-lap">Laptop HP Envy X360 13 bf0090TU i7 1250U/16GB/512GB/Touch/Pen/Win11
+                                (76B13PA)</p>
+                            <p class="gia-lap"><span>30.090.000đ</span></p>
+                            <p style="text-decoration: line-through;font-size: small; text-align: center;">
+                                32.390.000đ</p><br><br>
+                            <button type="button" class="buy-lap-btn">Add to cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="item-lap">
+                    <div class="slotlap">
+                        <div id="lapg">
+                            <img src="../img/hp/hp2.jpg" alt="ERROR" width="90%" class="img-lap" height="230px"usemap="#hp">
+                            <map name="hp">
+                                <area shape="rect" coords="0,1500,900,0" href="../html_ProductInfo/dellVostro5410.html"
+                                    alt="thongtinsanpham">
+                            </map>
+                    </div>
+                        </div>
+                        <div class="body-lap">
+                            <h3 class="heading-lap">HP Envy x360 Convert 13 ay1056AU R7</h3>
+                            <p class="desc-lap">Laptop HP Envy x360 Convert 13 ay1056AU R7
+                                5800U/8GB/256GB/Touch/Pen/Win11 (601Q8PA)</p>
+                            <p class="gia-lap"><span>25.890.000đ</span></p>
+                            <p style="text-decoration: line-through;font-size: small; text-align: center;">
+                                26.990.000đ</p><br><br>
+                            <button type="button" class="buy-lap-btn">Add to cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="item-lap">
+                    <div class="slotlap">
+                        <div id="lapg">
+                            <img src="../img/hp/hp3.jpg" alt="ERROR" width="90%" class="img-lap" height="230px"usemap="#hp1">
+                            <map name="hp1">
+                                <area shape="rect" coords="0,1500,900,0" href="../html_ProductInfo/dellVostro5410.html"
+                                    alt="thongtinsanpham">
+                            </map>
+                        </div>
+                        <div class="body-lap">
+                            <h3 class="heading-lap">HP Pavilion X360 14 ek0055TU i7</h3>
+                            <p class="desc-lap">Laptop HP Pavilion X360 14 ek0055TU i7 1255U/16GB/512GB/Touch/Pen/Win11
+                                (6L293PA)</p>
+                            <p class="gia-lap"><span>25.190.000đ</span></p>
+                            <p style="text-decoration: line-through;font-size: small; text-align: center;">
+                                26.990.000đ</p><br><br>
+                            <button type="button" class="buy-lap-btn">Add to cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="item-lap">
+                    <div class="slotlap">
+                        <div id="lapg">
+                            <img src="../img/hp/hp-15s-fq5078tu-i5-6k798pa-010922-041140-600x600.jpg" alt="ERROR"
+                                width="90%" class="img-lap" height="230px"usemap="#hp2">
+                                <map name="hp2">
+                                    <area shape="rect" coords="0,1500,900,0" href="../html_ProductInfo/dellVostro5410.html"
+                                        alt="thongtinsanpham">
+                                </map>
+                        </div>
+                        <div class="body-lap">
+                            <h3 class="heading-lap">HP Pavilion 15 eg2056TU i5</h3>
+                            <p class="desc-lap">Laptop HP Pavilion 15 eg2056TU i5 1240P/8GB/512GB/Win11 (6K786PA)</p>
+                            <p class="gia-lap"><span>17.490.000đ</span></p>
+                            <p style="text-decoration: line-through;font-size: small; text-align: center;">
+                                17.990.000đ</p><br><br>
+                            <button type="button" class="buy-lap-btn">Add to cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="item-lap">
+                    <div class="slotlap">
+                        <div id="lapg">
+                            <img src="../img/hp/hp-240-g8-i3-1005g1-4gb-256gb-win10-519a7pa-600x600.jpg" alt="ERROR"
+                                width="90%" class="img-lap" height="230px"usemap="#hp3">
+                                <map name="hp3">
+                                    <area shape="rect" coords="0,1500,900,0" href="../html_ProductInfo/dellVostro5410.html"
+                                        alt="thongtinsanpham">
+                                </map>
+                        </div>
+                        <div class="body-lap">
+                            <h3 class="heading-lap">HP 240 G8 i3 256GB Win10</h3>
+                            <p class="desc-lap">Laptop HP 240 G8 i3 1005G1/4GB/256GB/Win10 (519A7PA)</p>
+                            <p class="gia-lap"><span>9.190.000đ</span></p>
+                            <p style="text-decoration: line-through;font-size: small; text-align: center;">
+                                10.990.000đ</p><br><br>
+                            <button type="button" class="buy-lap-btn">Add to cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="item-lap">
+                    <div class="slotlap">
+                        <div id="lapg">
+                            <img src="../img/hp/hp-240-g8-i3-617k6pa-thumb-600x600.jpg" alt="ERROR" width="90%"
+                                class="img-lap" height="230px"usemap="#hp4">
+                                <map name="hp4">
+                                    <area shape="rect" coords="0,1500,900,0" href="../html_ProductInfo/dellVostro5410.html"
+                                        alt="thongtinsanpham">
+                                </map>
+                        </div>
+                        <div class="body-lap">
+                            <h3 class="heading-lap">HP 240 G8 i3 512GB Win11</h3>
+                            <p class="desc-lap">Laptop HP 240 G8 i3 1005G1/4GB/512GB/Win11 (617K6PA)</p>
+                            <p class="gia-lap"><span>23.490.000đ</span></p>
+                            <p style="text-decoration: line-through;font-size: small; text-align: center;">
+                                15.990.000đ</p><br><br>
+                            <button type="button" class="buy-lap-btn">Add to cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <br>
+            <div class="listLap">
+                <div class="item-lap">
+                    <div class="slotlap">
+                        <div id="lapg">
+                            <img src="../img//hp/hp-340s-g7-i3-240q4pa-13-600x600.jpg" alt="ERROR" width="90%"
+                                class="img-lap" height="230px"usemap="#hp5">
+                                <map name="hp5">
+                                    <area shape="rect" coords="0,1500,900,0" href="../html_ProductInfo/dellVostro5410.html"
+                                        alt="thongtinsanpham">
+                                </map>
+                        </div>
+                        <div class="body-lap">
+                            <h3 class="heading-lap">HP 340s G7 i3</h3>
+                            <p class="desc-lap">Laptop HP 340s G7 i3 1005G1/4GB/256GB/Win10 (240Q4PA)</p>
+                            <p class="gia-lap"><span>9.190.000đ</span></p>
+                            <p style="text-decoration: line-through;font-size: small;text-align: center;">
+                                12.990.000đ</p><br><br>
+                            <button type="button" class="buy-lap-btn">Add to cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="item-lap">
+                    <div class="slotlap">
+                        <div id="lapg">
+                            <img src="../img/hp/hp-elitebook-630-g9-i7-6m146pa-thumb-600x600.jpg" alt="ERROR"
+                                width="90%" class="img-lap" height="230px"usemap="#hp6">
+                                <map name="hp6">
+                                    <area shape="rect" coords="0,1500,900,0" href="../html_ProductInfo/dellVostro5410.html"
+                                        alt="thongtinsanpham">
+                                </map>
+                        </div>
+                        <div class="body-lap">
+                            <h3 class="heading-lap">HP EliteBook 630 G9 i7</h3>
+                            <p class="desc-lap">Laptop HP EliteBook 630 G9 i7 1255U/16GB/512GB/Win11 (6M146PA)</p>
+                            <p class="gia-lap"><span>26.690.000đ</span></p>
+                            <p style="text-decoration: line-through;font-size: small; text-align: center;">
+                                27.990.000đ</p><br><br>
+                            <button type="button" class="buy-lap-btn">Add to cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="item-lap">
+                    <div class="slotlap">
+                        <div id="lapg">
+                            <img src="../img/hp/hp-envy-13-ba1535tu-i7-4u6m4pa-291021-035216-600x600.jpg" alt="ERROR"
+                                width="90%" class="img-lap" height="230px"usemap="#hp7">
+                                <map name="hp7">
+                                    <area shape="rect" coords="0,1500,900,0" href="../html_ProductInfo/dellVostro5410.html"
+                                        alt="thongtinsanpham">
+                                </map>
+                        </div>
+                        <div class="body-lap">
+                            <h3 class="heading-lap">HP Envy 13 ba1535TU i7</h3>
+                            <p class="desc-lap">Laptop HP Envy 13 ba1535TU i7 1165G7/8GB/512GB/Win11 (4U6M4PA) </p>
+                            <p class="gia-lap"><span>24.590.000đ</span></p>
+                            <p style="text-decoration: line-through;font-size: small; text-align: center;">
+                                27.990.000đ</p><br><br>
+                            <button type="button" class="buy-lap-btn">Add to cart</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="listLap">
+                <div class="item-lap">
+                    <div class="slotlap">
+                        <div id="lapg">
+                            <img src="../img/hp/hp-pavilion-14-dv0516tu-i3-win11-46l88pa-thumb-600x600.jpg" alt="ERROR"
+                                width="90%" class="img-lap" height="230px"usemap="#hp8">
+                                <map name="hp8">
+                                    <area shape="rect" coords="0,1500,900,0" href="../html_ProductInfo/dellVostro5410.html"
+                                        alt="thongtinsanpham">
+                                </map>
+                        </div>
+                        <div class="body-lap">
+                            <h3 class="heading-lap">HP Envy X360 13 bf0090TU</h3>
+                            <p class="desc-lap">Laptop HP Envy X360 13 bf0090TU i7 1250U/16GB/512GB/Touch/Pen/Win11
+                                (76B13PA) </p>
+                            <p class="gia-lap"><span>31.190.000đ</span></p>
+                            <p style="text-decoration: line-through;font-size: small; text-align: center;">
+                                32.990.000đ</p><br><br>
+                            <button type="button" class="buy-lap-btn">Add to cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="item-lap">
+                    <div class="slotlap">
+                        <div id="lapg">
+                            <img src="../img/hp/hp-pavilion-15-eg2056tu-i5-6k786pa-160822-111629-600x600.jpg"
+                                alt="ERROR" width="90%" class="img-lap" height="230px"usemap="#hp9">
+                                <map name="hp9">
+                                    <area shape="rect" coords="0,1500,900,0" href="../html_ProductInfo/dellVostro5410.html"
+                                        alt="thongtinsanpham">
+                                </map>
+                        </div>
+                        <div class="body-lap">
+                            <h3 class="heading-lap">HP Envy x360 Convert 13 ay1056AU R7</h3>
+                            <p class="desc-lap">Laptop HP Envy x360 Convert 13 ay1056AU R7
+                                5800U/8GB/256GB/Touch/Pen/Win11 (601Q8PA)</p>
+                            <p class="gia-lap"><span>25.190.000đ</span></p>
+                            <p style="text-decoration: line-through;font-size: small; text-align: center;">
+                                30.990.000đ</p><br><br>
+                            <button type="button" class="buy-lap-btn">Add to cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="item-lap">
+                    <div class="slotlap">
+                        <div id="lapg">
+                            <img src="../img/hp/hp-victus-16-d0292tx-i5-5z9r3pa-thumb-600x600.jpg" alt="ERROR"
+                                width="90%" class="img-lap" height="230px"usemap="#hp0">
+                                <map name="hp0">
+                                    <area shape="rect" coords="0,1500,900,0" href="../html_ProductInfo/dellVostro5410.html"
+                                        alt="thongtinsanpham">
+                                </map>
+                        </div>
+                        <div class="body-lap">
+                            <h3 class="heading-lap">HP Pavilion X360 14 ek0055TU</h3>
+                            <p class="desc-lap">Laptop HP Pavilion X360 14 ek0055TU i7
+                                1255U/16GB/512GB/Touch/Pen/Win11 (6L293PA)</p>
+                            <p class="gia-lap"><span>22.990.000đ</span></p>
+                            <p style="text-decoration: line-through;font-size: small; text-align: center;">
+                                25.990.000đ</p><br><br>
+                            <button type="button" class="buy-lap-btn">Add to cart</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <script src="../js/cart.js"></script>
+    <div id="footer">
+        <div id="nhomThucHien">
+            <h5>MEMBERS OF TEAM</h5>
+            <h6><a href="#">Truong Minh Dat</a></h6>
+            <h6><a href="#">Phung Thi My Dieu</a></h6>
+        </div>
+        <div id="hoTroKhachHang">
+            <h5>CUSTUMER SERVICES</h5>
+            <h6><a href="../Main-html/MainTech.html">Shopping Online Tutorials</a></h6>
+            <h6><a href="../Main-html/MainTech.html">Payment Tutorials</a></h6>
+            <h6><a href="../Main-html/MainTech.html">Learn About Installment Purchase</a></h6>
+        </div>
+        <div id="chinhSachChung">
+            <h5>POLICY</h5>
+            <h6><a href="#">Warranty Policy</a></h6>
+            <h6><a href="#">Return Policy</a></h6>
+            <h6><a href="#">Operational Regulations</a></h6>
+            <h6><a href="#">Business Sales</a></h6>
+        </div>
+        <div id="socail">
+            <h5 style="padding-right: 30px;">SOCAIL MEDIA</h5>
+            <a href="https://www.facebook.com/profile.php?id=100046984711384"><i class="ti-facebook"></i></a>
+            <a href="#"><i class="ti-instagram"></i>
+                <a href="#"><i class="ti-twitter-alt"></i></a>
+                <a href="#"><i class="ti-skype"></i></a>
+                <br><br>
+                <a href="#"><i class="ti-yahoo"></i></a>
+                <a href="#"><i class="ti-wordpress"></i></a>
+                <a href="#"><i class="ti-youtube"></i></a>
+                <a href="#"><i class="ti-google"></i></a>
+        </div>
+        <div id="contact">
+            <h5>CONTACT FOR WORK</h5>
+            <p><a href="#">0925430713</p></a>
+            <p><a href="#">0866485827</p></a>
+        </div>
+    </div>
+
+    <!-- back to top -->
+    <div>
+        <button id="myBtnbtt" title="Lên đầu trang"><img src='../img/icon-256x256.png' title='Back to top' width='50px'
+                height="50px" /></button>
+        <script src="../js/backtotop.js"></script>
+    </div>
+</body>
+
+</html>

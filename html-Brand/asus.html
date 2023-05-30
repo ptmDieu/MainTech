@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laptop Asus </title>
+</head>
+
+<body>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../CSS/MainTech.css">
+    <link rel="stylesheet" href="../icon/themify-icons/themify-icons.css">
+    <link rel="stylesheet" href="../css/backtotop.css">
+    <link rel="stylesheet" href="../css/danhsachlapcon.css">
+    <link rel="stylesheet" href="../css/alllap.css">
+
+    <script src="../js/jquery-3.3.1.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/Login.js"></script>
+    <script src="../js/SignUp.js"></script>
+    <div id="wrapper">
+        <!-- header -->
+        <header>
+            <div class="top_header">
+                <div class="header_absolute">
+                    <nav class="navbar-collapse">
+                        <ul class="navbar-nav nav">
+                            <li class="logo"><img src="../img/LOGO-removebg-preview.png" alt="" usemap="#home"></li>
+                            <map name="home">
+                                <area shape="rect" coords="1,1,248,27" href="../Main-html/MainTech.html" alt="">
+                            </map>
+                            <li class="search">
+                                <form action="">
+                                    <input type="search" id="txtSearch" placeholder="Search the site..." size="40">
+                                    <a href="../Main-html/MainTech.html"><i class="ti-search"></i></a>
+                                </form>
+                            </li>
+                            <li><button type="button" id="myLogin"><i class="ti-user"></i> Log in</button></li>
+                            <li><button type="button" id="mySignup"><i class="ti-stamp"></i> Sign up</button></li>
+                            <li>
+                                <p class="carticon"><i class="ti-shopping-cart"></i></p>
+                            </li>
+                        </ul>
+                    </nav>
+                    <!-- menu -->
+                    <div class="nav">
+                        <ul id="menu">
+                            <li><a href="../Main-html/alllap.html">LAPTOP</a>
+                                <ul id="submenu">
+                                    <li><a href="../html-Brand/dell.html">Dell</a></li>
+                                    <li><a href="../html-Brand/asus.html">Asus</a></li>
+                                    <li><a href="../html-Brand/hp.html">HP</a></li>
+                                    <li><a href="../html-SubList/listMac.html">Macbook</a></li>
+                                    <li><a href="../html-Brand/lenovo.html">Lenovo</a></li>
+                                    <li><a href="../html-Brand/acer.html">Acer</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">PC</a>
+                            <li><a href="#">COMPONENTS</a>
+                                <ul id="submenu">
+                                    <li><a href="#">Mouse</a></li>
+                                    <li><a href="#">Keyboard</a></li>
+                                    <li><a href="#">Shockproof Bag</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">DEVICE</a>
+                                <ul id="submenu">
+                                    <li><a href="#">Loudspeaker</a></li>
+                                    <li><a href="#">Micro</a></li>
+                                    <li><a href="#">Headphone</a></li>
+                                    <li><a href="#">USB</a></li>
+                                    <li><a href="#">Disk</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">CONTACT </a>
+                                <ul id="submenu">
+                                    <li><a href="#footer">Phone Contact</a></li>
+                                    <li><a href="#footer">Email</a></li>
+                                    <li><a href="#footer">Zalo</a></li>
+                                    <li><a href="#footer">Facebook</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="../Main-html/MainTech.html">BACK TO HOME</a>
+
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- modal đk, đn -->
+                <div class="modal fade" id="myModalDK" role="dialog">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal">X</button>
+                                <h1 style="text-align: center;">SIGN UP ACCOUNT</h1>
+                            </div>
+                            <div class="modal-body">
+                                <form role="form" class="form-horizontal">
+                                    <div class="form-group">
+                                        <div id="thongbao" class="text-danger" style="text-align: center;"></div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="txtHT" class="control-label col-xs-3">FULL NAME</label>
+                                        <div class="col-md-9">
+                                            <input type="text" class="form-control" id="txtHT"
+                                                placeholder="Enter your full name">
+                                            <span id="tbTen" class="text-danger">*</span>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="txtDC" class="control-label col-xs-3">ADDRESS</label>
+                                        <div class="col-md-9">
+                                            <input type="text" class="form-control" id="txtDC"
+                                                placeholder="Enter your address">
+                                            <span id="tbDC" class="text-danger">*</span>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="txtEmail" class="control-label col-xs-3">EMAIL</label>
+                                        <div class="col-md-9">
+                                            <input type="email" class="form-control" id="txtEmail"
+                                                placeholder="Enter your email">
+                                            <span id="tbEmail" class="text-danger">*</span>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="txtSDT" class="control-label col-xs-3">PHONE NUMBER</label>
+                                        <div class="col-md-9">
+                                            <input type="text" class="form-control" id="txtSDT"
+                                                placeholder="Enter your phone number">
+                                            <span id="tbSDT" class="text-danger">*</span>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="txtPw" class="control-label col-xs-3">PASSWORD</label>
+                                        <div class="col-md-9">
+                                            <input type="text" class="form-control" id="txtPw"
+                                                placeholder="Create your password account">
+                                            <span id="tbPw" class="text-danger">*</span>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="txtPw" class="control-label col-xs-3">PASSWORD CONFIRM</label>
+                                        <div class="col-md-9">
+                                            <input type="text" class="form-control" id="txtPwC"
+                                                placeholder="Create your password confirm account">
+                                            <span id="tbPwC" class="text-danger">*</span>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" id="btnSaveDK" class="btn btn-success btn-block"
+                                    style=" background-color:  rgb(188, 31, 177);">Sign up</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal fade" id="myModalDN" role="dialog">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal">X</button>
+                                <h1 style="text-align: center;">LOG IN ACCOUNT</h1>
+                            </div>
+                            <div class="modal-body">
+                                <form role="form" class="form-horizontal">
+                                    <div class="form-group">
+                                        <div id="thongbao" class="text-danger" style="text-align: center;"></div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="txtEmailDN" class="control-label col-xs-3">USERNAME/EMAIL</label>
+                                        <div class="col-md-9">
+                                            <input type="email" class="form-control" id="txtEmailDN"
+                                                placeholder="Enter your username or email">
+                                            <span id="tbEmailDN" class="text-danger">*</span>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="txtMK" class="control-label col-xs-3">PASSWORD</label>
+                                        <div class="col-md-9">
+                                            <input type="text" class="form-control" id="txtMK"
+                                                placeholder="Enter your password">
+                                            <span id="tbMK" class="text-danger">*</span>
+                                        </div>
+                                    </div>
+
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" id="btnSaveDN" class="btn btn-success btn-block"
+                                    style="background-color: rgb(157, 0, 157);">Log in</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- QUẢNG CÁO -->
+    </div>
+    <!-- section -->
+    <section class="cart">
+        <div class="cartclose">
+            <i class="ti-close"></i>
+        </div>
+        <h2 style="color: rgb(53, 7, 145);">YOUR CART</h2>
+        <form action="">
+            <table>
+                <thead>
+                    <tr style="color:rgb(185, 59, 177);font-weight: bold;font-size: 15px;">
+                        <th>Product</th>
+                        <th style="text-align:center ;">Price</th>
+                        <th>Quantity</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
+            <button type="button" style="background-color: rgb(207, 53, 207);"><a href="../Main-html/MainTech.html"
+                    style="color:rgb(255, 255, 255);">Buy</a></button>
+        </form>
+    </section>
+    <script src="../js/cartshow.js"></script>
+    <div id="hang">
+        <h3>LAPTOP BRAND</h3>
+        <a href="../html-Brand/dell.html"><img src="../img/nhan-hang/dell.png" alt=""></a>
+        <a href="../html-Brand/asus.html"><img src="../img/nhan-hang/asus.png" alt=""></a>
+        <a href="../html-Brand/hp.html"><img src="../img/nhan-hang/hp.png" alt=""></a>
+        <a href="../html-SubList/listMac.html"><img src="../img/nhan-hang/mac.png" alt=""></a>
+        <a href="../html-Brand/lenovo.html"><img src="../img/nhan-hang/lenovo.png" alt=""></a>
+        <a href="../html-Brand/acer.html"><img src="../img/nhan-hang/acer.png" alt=""></a>
+    </div>
+    <div id="productList">
+        <h1 style="margin-left:660px;">LAPTOP ASUS</h1>
+    </div>
+    <div id="section">
+        <div class="DanhSachLapTop">
+            <div class="listLap">
+                <div class="item-lap">
+                    <div class="slotlap">
+                        <div id="lapg">
+                            <img src="../img/asus/asus-gaming-rog-flow-z13-gz301z-i7-ld110w-160322-120057-600x600.jpg"
+                                alt="ERROR" width="90%" class="img-lap" height="230px" usemap="#graphics1">
+                            <map name="graphics1">
+                                <area shape="rect" coords="0,1500,900,0" href="../html_ProductInfo/asusTUFFX517ZC.html "
+                                    alt="thongtinsanpham">
+                            </map>
+                        </div>
+                        <div class="body-lap">
+                            <h3 class="heading-lap">Asus Gaming ROG Flow Z13 GZ301Z i7</h3>
+                            <p class="desc-lap">Laptop Asus Gaming ROG Flow Z13 GZ301Z i7 12700H/16GB/512GB/4GB
+                                RTX3050/120Hz/Touch/Pen/Túi/Win11 (LD110W)</p>
+                            <p class="gia-lap"><span>48.890.000đ</span></p>
+                            <p style="text-decoration: line-through;font-size: small; text-align: center;">
+                                50.990.000<sup>đ</sup></p><br><br>
+                            <!-- nhân vào mua thì chuyển<sup>đ</sup>ến trang -->
+                            <button type="button" class="buy-lap-btn">Add to cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="item-lap">
+                    <div class="slotlap">
+                        <div id="lapg">
+                            <img src="../img/asus/asus-rog-strix-gaming-g513ih-r7-4800h-8gb-512gb-4gb-600x600.jpg"
+                                alt="ERROR" width="90%" class="img-lap" height="230px"usemap="#as1">
+                                <map name="as1">
+                                    <area shape="rect" coords="0,1500,900,0" href="../html_ProductInfo/dellVostro5410.html"
+                                        alt="thongtinsanpham">
+                                </map>
+                        </div>
+                        <div class="body-lap">
+                            <h3 class="heading-lap">Asus ROG Strix Gaming G513IH R7</h3>
+                            <p class="desc-lap">Laptop Asus ROG Strix Gaming G513IH R7 4800H/8GB/512GB/4GB
+                                GTX1650/144Hz/Win11 (HN015W)</p>
+                            <p class="gia-lap"><span>20.190.000đ</span></p>
+                            <p style="text-decoration: line-through;font-size: small; text-align: center;">
+                                22.390.000<sup>đ</sup></p><br><br>
+                            <!-- nhân vào mua thì chuyển<sup>đ</sup>ến trang -->
+                            <button type="button" class="buy-lap-btn">Add to cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="item-lap">
+                    <div class="slotlap">
+                        <div id="lapg">
+                            <img src="../img/asus/asus-rog-strix-gaming-g513r-r7-hn038w-170822-061143-600x600.jpg"
+                                alt="ERROR" width="90%" class="img-lap" height="230px"usemap="#as2">
+                                <map name="as2">
+                                    <area shape="rect" coords="0,1500,900,0" href="../html_ProductInfo/dellVostro5410.html"
+                                        alt="thongtinsanpham">
+                                </map>
+                        </div>
+                        <div class="body-lap">
+                            <h3 class="heading-lap">Asus ROG Strix Gaming G513R R7</h3>
+                            <p class="desc-lap">Laptop Asus ROG Strix Gaming G513R R7 6800H/8GB/512GB/4GB
+                                RTX3050/144Hz/Win11 (HN038W)</p>
+                            <p class="gia-lap"><span>28.490.000đ</span></p>
+                            <p style="text-decoration: line-through;font-size: small; text-align: center;">
+                                29.990.000<sup>đ</sup></p><br><br>
+                            <!-- nhân vào mua thì chuyển<sup>đ</sup>ến trang -->
+                            <button type="button" class="buy-lap-btn">Add to cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="item-lap">
+                    <div class="slotlap">
+                        <div id="lapg">
+                            <img src="../img/asus/asus-tuf-gaming-fx506hm-i7-hn366w-600x600.jpg" alt="ERROR" width="90%"
+                                class="img-lap" height="230px"usemap="#as3">
+                                <map name="as3">
+                                    <area shape="rect" coords="0,1500,900,0" href="../html_ProductInfo/dellVostro5410.html"
+                                        alt="thongtinsanpham">
+                                </map>
+                        </div>
+                        <div class="body-lap">
+                            <h3 class="heading-lap">Asus TUF Gaming FX506HM i7</h3>
+                            <p class="desc-lap">Laptop Asus TUF Gaming FX506HM i7 11800H/8GB/512GB/6GB
+                                RTX3060/144Hz/Win11 (HN366W)</p>
+                            <p class="gia-lap"><span>30.190.000đ</span></p>
+                            <p style="text-decoration: line-through;font-size: small; text-align: center;">
+                                31.990.000<sup>đ</sup></p><br><br>
+                            <!-- nhân vào mua thì chuyển<sup>đ</sup>ến trang -->
+                            <button type="button" class="buy-lap-btn">Add to cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="item-lap">
+                    <div class="slotlap">
+                        <div id="lapg">
+                            <img src="../img/asus/asus-tuf-gaming-fx506lhb-i5-hn188w-600x600.jpeg" alt="ERROR"
+                                width="90%" class="img-lap" height="230px"usemap="#as4">
+                                <map name="as4">
+                                    <area shape="rect" coords="0,1500,900,0" href="../html_ProductInfo/dellVostro5410.html"
+                                        alt="thongtinsanpham">
+                                </map>
+                        </div>
+                        <div class="body-lap">
+                            <h3 class="heading-lap">Asus TUF Gaming FX506LHB i5</h3>
+                            <p class="desc-lap">Laptop Asus TUF Gaming FX506LHB i5 10300H/8GB/512GB/4GB
+                                GTX1650/144Hz/Win11 (HN188W)</p>
+                            <p class="gia-lap"><span>18.590.000đ</span></p>
+                            <p style="text-decoration: line-through;font-size: small; text-align: center;">
+                                19.990.000<sup>đ</sup></p><br><br>
+                            <!-- nhân vào mua thì chuyển<sup>đ</sup>ến trang -->
+                            <button type="button" class="buy-lap-btn">Add to cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <br>
+            <div class="listLap">
+                <div class="item-lap">
+                    <div class="slotlap">
+                        <div id="lapg">
+                            <img src="../img/asus/asus-tuf-gaming-fx507z-i7-hn123w-thumb-600x600.jpg" alt="ERROR"
+                                width="90%" class="img-lap" height="230px"usemap="#as5">
+                                <map name="as5">
+                                    <area shape="rect" coords="0,1500,900,0" href="../html_ProductInfo/dellVostro5410.html"
+                                        alt="thongtinsanpham">
+                                </map>
+                        </div>
+                        <div class="body-lap">
+                            <h3 class="heading-lap">Asus TUF Gaming FX507Z i7</h3>
+                            <p class="desc-lap">Laptop Asus TUF Gaming FX507Z i7 12700H/8GB/512GB/4GB
+                                RTX3050Ti/144Hz/Win11 (HN093W) </p>
+                            <p class="gia-lap"><span>31.190.000đ</span></p>
+                            <p style="text-decoration: line-through;font-size: small;text-align: center;">
+                                32.990.000<sup>đ</sup></p><br><br>
+                            <!-- nhân vào mua thì chuyển<sup>đ</sup>ến trang -->
+                            <button type="button" class="buy-lap-btn">Add to cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="item-lap">
+                    <div class="slotlap">
+                        <div id="lapg">
+                            <img src="../img/asus/asus-tuf-gaming-fx517ze-i5-hn045w-thumb-600x600.jpg" alt="ERROR"
+                                width="90%" class="img-lap" height="230px"usemap="#as6">
+                                <map name="as6">
+                                    <area shape="rect" coords="0,1500,900,0" href="../html_ProductInfo/dellVostro5410.html"
+                                        alt="thongtinsanpham">
+                                </map>
+                        </div>
+                        <div class="body-lap">
+                            <h3 class="heading-lap">Asus TUF Gaming FX517Z i7</h3>
+                            <p class="desc-lap">Laptop Asus TUF Gaming FX517Z i7 12650H/8GB/512GB/6GB
+                                RTX3060/144Hz/Win11 (HN480W) </p>
+                            <p class="gia-lap"><span>31.690.000đ</span></p>
+                            <p style="text-decoration: line-through;font-size: small; text-align: center;">
+                                32.990.000<sup>đ</sup></p><br><br>
+                            <!-- nhân vào mua thì chuyển<sup>đ</sup>ến trang -->
+                            <button type="button" class="buy-lap-btn">Add to cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="item-lap">
+                    <div class="slotlap">
+                        <div id="lapg">
+                            <img src="../img/asus/asus-vivobook-15-x1502za-i5-ej120w-600x600.jpg" alt="ERROR"
+                                width="90%" class="img-lap" height="230px"usemap="#as7">
+                                <map name="as7">
+                                    <area shape="rect" coords="0,1500,900,0" href="../html_ProductInfo/dellVostro5410.html"
+                                        alt="thongtinsanpham">
+                                </map>
+                        </div>
+                        <div class="body-lap">
+                            <h3 class="heading-lap">Asus Vivobook 15 X1502ZA i5</h3>
+                            <p class="desc-lap">Laptop Asus Vivobook 15 X1502ZA i5 1240P/8GB/512GB/Win11 (EJ120W) </p>
+                            <p class="gia-lap"><span>17.590.000đ</span></p>
+                            <p style="text-decoration: line-through;font-size: small; text-align: center;">
+                                17.990.000<sup>đ</sup></p><br><br>
+                            <!-- nhân vào mua thì chuyển<sup>đ</sup>ến trang -->
+                            <button type="button" class="buy-lap-btn">Add to cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="item-lap">
+                    <div class="slotlap">
+                        <div id="lapg">
+                            <img src="../img/asus/asus-vivobook-a415ea-i5-1135g7-8gb-512gb-600x600.jpg" alt="ERROR"
+                                width="90%" class="img-lap" height="230px"usemap="#as8">
+                                <map name="as8">
+                                    <area shape="rect" coords="0,1500,900,0" href="../html_ProductInfo/dellVostro5410.html"
+                                        alt="thongtinsanpham">
+                                </map>
+                        </div>
+                        <div class="body-lap">
+                            <h3 class="heading-lap">Asus VivoBook A415EA i5</h3>
+                            <p class="desc-lap">Laptop Asus VivoBook A415EA i5 1135G7/8GB/512GB/Win11 (AM1637W)</p>
+                            <p class="gia-lap"><span>16.190.000đ</span></p>
+                            <p style="text-decoration: line-through;font-size: small; text-align: center;">
+                                18.990.000<sup>đ</sup></p><br><br>
+                            <!-- nhân vào mua thì chuyển<sup>đ</sup>ến trang -->
+                            <button type="button" class="buy-lap-btn">Add to cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="listLap">
+                <div class="item-lap">
+                    <div class="slotlap">
+                        <div id="lapg">
+                            <img src="../img/asus/asus-vivobook-pro-15-oled-k6502z-i7-ma036w-thumb-600x600.jpg"
+                                alt="ERROR" width="90%" class="img-lap" height="230px"usemap="#as9">
+                                <map name="as9">
+                                    <area shape="rect" coords="0,1500,900,0" href="../html_ProductInfo/dellVostro5410.html"
+                                        alt="thongtinsanpham">
+                                </map>
+                        </div>
+                        <div class="body-lap">
+                            <h3 class="heading-lap">Asus Vivobook Pro 15 OLED K6502Z i7</h3>
+                            <p class="desc-lap">Laptop Asus Vivobook Pro 15 OLED K6502Z i7 12650H/16GB/512GB/4GB
+                                RTX3050/Win11 (MA036W) </p>
+                            <p class="gia-lap"><span>31.190.000đ</span></p>
+                            <p style="text-decoration: line-through;font-size: small; text-align: center;">
+                                32.990.000<sup>đ</sup></p><br><br>
+                            <!-- nhân vào mua thì chuyển<sup>đ</sup>ến trang -->
+                            <button type="button" class="buy-lap-btn">Add to cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="item-lap">
+                    <div class="slotlap">
+                        <div id="lapg">
+                            <img src="../img/asus/asus-zenbook-14-oled-ux3402za-i7-km221w-600x600.jpg" alt="ERROR"
+                                width="90%" class="img-lap" height="230px"usemap="#as10">
+                                <map name="as10">
+                                    <area shape="rect" coords="0,1500,900,0" href="../html_ProductInfo/dellVostro5410.html"
+                                        alt="thongtinsanpham">
+                                </map>
+                        </div>
+                        <div class="body-lap">
+                            <h3 class="heading-lap">Asus Zenbook 14 OLED UX3402ZA i7</h3>
+                            <p class="desc-lap">Laptop Asus Zenbook 14 OLED UX3402ZA i7 1260P/16GB/512GB/Cáp/Win11
+                                (KM221W)(601Q8PA)</p>
+                            <p class="gia-lap"><span>30.690.000đ</span></p>
+                            <p style="text-decoration: line-through;font-size: small; text-align: center;">
+                                31.990.000<sup>đ</sup></p><br><br>
+                            <!-- nhân vào mua thì chuyển<sup>đ</sup>ến trang -->
+                            <button type="button" class="buy-lap-btn">Add to cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="item-lap">
+                    <div class="slotlap">
+                        <div id="lapg">
+                            <img src="../img/asus/asus-zenbook-ux325ea-i5-1135g7-8gb-512gb-600x600.jpg" alt="ERROR"
+                                width="90%" class="img-lap" height="230px"usemap="#as11">
+                                <map name="as11">
+                                    <area shape="rect" coords="0,1500,900,0" href="../html_ProductInfo/dellVostro5410.html"
+                                        alt="thongtinsanpham">
+                                </map>
+                        </div>
+                        <div class="body-lap">
+                            <h3 class="heading-lap">Asus ZenBook UX325EA i5</h3>
+                            <p class="desc-lap">Laptop Asus ZenBook UX325EA i5 1135G7/8GB/512GB/Cáp/Túi/Win11 (KG656W)
+                                (6L293PA)</p>
+                            <p class="gia-lap"><span>23.890.000đ</span></p>
+                            <p style="text-decoration: line-through;font-size: small; text-align: center;">
+                                25.990.000<sup>đ</sup></p><br><br>
+                            <!-- nhân vào mua thì chuyển<sup>đ</sup>ến trang -->
+                            <button type="button" class="buy-lap-btn">Add to cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <script src="../js/cart.js"></script>
+        <div id="footer">
+            <div id="nhomThucHien">
+                <h5>MEMBERS OF TEAM</h5>
+                <h6><a href="#">Truong Minh Dat</a></h6>
+                <h6><a href="#">Phung Thi My Dieu</a></h6>
+            </div>
+            <div id="hoTroKhachHang">
+                <h5>CUSTUMER SERVICES</h5>
+                <h6><a href="../Main-html/MainTech.html">Shopping Online Tutorials</a></h6>
+                <h6><a href="../Main-html/MainTech.html">Payment Tutorials</a></h6>
+                <h6><a href="../Main-html/MainTech.html">Learn About Installment Purchase</a></h6>
+            </div>
+            <div id="chinhSachChung">
+                <h5>POLICY</h5>
+                <h6><a href="#">Warranty Policy</a></h6>
+                <h6><a href="#">Return Policy</a></h6>
+                <h6><a href="#">Operational Regulations</a></h6>
+                <h6><a href="#">Business Sales</a></h6>
+            </div>
+            <div id="socail">
+                <h5 style="padding-right: 30px;">SOCAIL MEDIA</h5>
+                <a href="https://www.facebook.com/profile.php?id=100046984711384"><i class="ti-facebook"></i></a>
+                <a href="#"><i class="ti-instagram"></i>
+                    <a href="#"><i class="ti-twitter-alt"></i></a>
+                    <a href="#"><i class="ti-skype"></i></a>
+                    <br><br>
+                    <a href="#"><i class="ti-yahoo"></i></a>
+                    <a href="#"><i class="ti-wordpress"></i></a>
+                    <a href="#"><i class="ti-youtube"></i></a>
+                    <a href="#"><i class="ti-google"></i></a>
+            </div>
+            <div id="contact">
+                <h5>CONTACT FOR WORK</h5>
+                <p><a href="#">0925430713</p></a>
+                <p><a href="#">0866485827</p></a>
+            </div>
+        </div>
+
+        <!-- back to top -->
+        <div>
+            <button id="myBtnbtt" title="Lên đầu trang"><img src='../img/icon-256x256.png' title='Back to top'
+                    width='50px' height="50px" /></button>
+            <script src="../js/backtotop.js"></script>
+        </div>
+</body>
+
+</html>

@@ -1,0 +1,32 @@
+#hang{
+    margin-top: 50px;
+}
+#hang img{
+    border-radius: 5px;
+    margin-left: 110px;
+}
+#hang h3{
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: rgb(151, 246, 43);
+    margin-left: 690px;
+    padding-bottom: 30px;
+    padding-top: 20px;
+}
+header{
+    height: 700px;
+}
+#productList{
+    width: 100%;
+    background-color: rgb(251, 255, 0);
+}
+#productList h1{
+    color: rgb(199, 21, 202);
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin-left: 620px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    margin-top: 30px;
+}
+
+
+

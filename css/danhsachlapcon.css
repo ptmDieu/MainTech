@@ -1,0 +1,102 @@
+.DanhSachLapTop{
+    margin: 20px;
+}
+
+.listLap {
+    margin: 40px -8px 0px;
+}
+
+.item-lap {
+    float: left;
+    width: 25%;
+    padding: 8px;
+}
+
+.img-lap {
+    margin-top: 10px;
+}
+
+.slotlap {
+    background-color: #fff;
+}
+
+#lapg {
+    width: 95%;
+    margin: auto;
+    background-color: #fff;
+}
+
+.body-lap {
+    padding: 16px;
+    background-color: white;
+    font-size: 15px;
+}
+
+.body-lap h3 {
+    font-weight: bold;
+}
+
+.heading-lap {
+    height: 50px;
+    text-align: center;
+}
+
+.desc-lap {
+    height: 50px;
+    text-align: center;
+}
+
+.gia-lap {
+    color: red;
+    font-weight: bold;
+    text-align: center;
+}
+
+.buy-lap-btn {
+    color: #fff;
+    background-color: rgb(188, 31, 177);
+    text-decoration: none;
+    padding: 6px 25px;
+    display: inline-block;
+    margin-left: 90px;
+}
+
+.all p{
+    text-align: center;
+}
+
+.all a:hover{
+    text-decoration: none;
+    color: aquamarine;
+}
+
+.div1 .buy-lap-btn {
+    color: #fff;
+    background-color: rgb(95, 22, 239);
+    text-decoration: none;
+    padding: 6px 25px;
+    display: inline-block;
+}
+
+.buy-lap-btn{
+    margin-left: 105px;
+}
+.buy-lap-btn:hover {
+    text-decoration: none;
+    background-color: red;
+    color: white;
+}
+
+/* Mui ten lên dau trang */
+#myBtnbtt {
+    display: none;
+    position: fixed;
+    bottom: 60px;
+    right: 40px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 110%;
+    opacity: 0.7;
+}

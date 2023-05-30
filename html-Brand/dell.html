@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laptop Dell </title>
+</head>
+
+<body>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../CSS/MainTech.css">
+    <link rel="stylesheet" href="../icon/themify-icons/themify-icons.css">
+    <link rel="stylesheet" href="../css/backtotop.css">
+    <link rel="stylesheet" href="../css/danhsachlapcon.css">
+    <link rel="stylesheet" href="../css/alllap.css">
+
+    <script src="../js/jquery-3.3.1.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/Login.js"></script>
+    <script src="../js/SignUp.js"></script>
+
+    <div id="wrapper">
+        <!-- header -->
+        <header>
+            <div class="top_header">
+                <div class="header_absolute">
+                    <nav class="navbar-collapse">
+                        <ul class="navbar-nav nav">
+                            <li class="logo"><img src="../img/LOGO-removebg-preview.png" alt="" usemap="#home"></li>
+                            <map name="home">
+                                <area shape="rect" coords="1,1,248,27" href="../Main-html/MainTech.html" alt="">
+                            </map>
+                            <li class="search">
+                                <form action="">
+                                    <input type="search" id="txtSearch" placeholder="Search the site..." size="40">
+                                    <a href="../Main-html/MainTech.html"><i class="ti-search"></i></a>
+                                </form>
+                            </li>
+                            <li><button type="button" id="myLogin"><i class="ti-user"></i> Log in</button></li>
+                            <li><button type="button" id="mySignup"><i class="ti-stamp"></i> Sign up</button></li>
+                            <li>
+                                <p class="carticon"><i class="ti-shopping-cart"></i></p>
+                            </li>
+                        </ul>
+                    </nav>
+                    <!-- menu -->
+                    <div class="nav">
+                        <ul id="menu">
+                            <li><a href="../Main-html/alllap.html">LAPTOP</a>
+                                <ul id="submenu">
+                                    <li><a href="../html-Brand/dell.html">Dell</a></li>
+                                    <li><a href="../html-Brand/asus.html">Asus</a></li>
+                                    <li><a href="../html-Brand/hp.html">HP</a></li>
+                                    <li><a href="../html-SubList/listMac.html">Macbook</a></li>
+                                    <li><a href="../html-Brand/lenovo.html">Lenovo</a></li>
+                                    <li><a href="../html-Brand/acer.html">Acer</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">PC</a>
+                            <li><a href="#">COMPONENTS</a>
+                                <ul id="submenu">
+                                    <li><a href="#">Mouse</a></li>
+                                    <li><a href="#">Keyboard</a></li>
+                                    <li><a href="#">Shockproof Bag</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">DEVICE</a>
+                                <ul id="submenu">
+                                    <li><a href="#">Loudspeaker</a></li>
+                                    <li><a href="#">Micro</a></li>
+                                    <li><a href="#">Headphone</a></li>
+                                    <li><a href="#">USB</a></li>
+                                    <li><a href="#">Disk</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">CONTACT </a>
+                                <ul id="submenu">
+                                    <li><a href="#footer">Phone Contact</a></li>
+                                    <li><a href="#footer">Email</a></li>
+                                    <li><a href="#footer">Zalo</a></li>
+                                    <li><a href="#footer">Facebook</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="../Main-html/MainTech.html">BACK TO HOME</a>
+
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- modal đk, đn -->
+                <div class="modal fade" id="myModalDK" role="dialog">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal">X</button>
+                                <h1 style="text-align: center;">SIGN UP ACCOUNT</h1>
+                            </div>
+                            <div class="modal-body">
+                                <form role="form" class="form-horizontal">
+                                    <div class="form-group">
+                                        <div id="thongbao" class="text-danger" style="text-align: center;"></div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="txtHT" class="control-label col-xs-3">FULL NAME</label>
+                                        <div class="col-md-9">
+                                            <input type="text" class="form-control" id="txtHT"
+                                                placeholder="Enter your full name">
+                                            <span id="tbTen" class="text-danger">*</span>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="txtDC" class="control-label col-xs-3">ADDRESS</label>
+                                        <div class="col-md-9">
+                                            <input type="text" class="form-control" id="txtDC"
+                                                placeholder="Enter your address">
+                                            <span id="tbDC" class="text-danger">*</span>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="txtEmail" class="control-label col-xs-3">EMAIL</label>
+                                        <div class="col-md-9">
+                                            <input type="email" class="form-control" id="txtEmail"
+                                                placeholder="Enter your email">
+                                            <span id="tbEmail" class="text-danger">*</span>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="txtSDT" class="control-label col-xs-3">PHONE NUMBER</label>
+                                        <div class="col-md-9">
+                                            <input type="text" class="form-control" id="txtSDT"
+                                                placeholder="Enter your phone number">
+                                            <span id="tbSDT" class="text-danger">*</span>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="txtPw" class="control-label col-xs-3">PASSWORD</label>
+                                        <div class="col-md-9">
+                                            <input type="text" class="form-control" id="txtPw"
+                                                placeholder="Create your password account">
+                                            <span id="tbPw" class="text-danger">*</span>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="txtPw" class="control-label col-xs-3">PASSWORD CONFIRM</label>
+                                        <div class="col-md-9">
+                                            <input type="text" class="form-control" id="txtPwC"
+                                                placeholder="Create your password confirm account">
+                                            <span id="tbPwC" class="text-danger">*</span>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" id="btnSaveDK" class="btn btn-success btn-block"
+                                    style=" background-color:  rgb(188, 31, 177);">Sign up</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal fade" id="myModalDN" role="dialog">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal">X</button>
+                                <h1 style="text-align: center;">LOG IN ACCOUNT</h1>
+                            </div>
+                            <div class="modal-body">
+                                <form role="form" class="form-horizontal">
+                                    <div class="form-group">
+                                        <div id="thongbao" class="text-danger" style="text-align: center;"></div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="txtEmailDN" class="control-label col-xs-3">USERNAME/EMAIL</label>
+                                        <div class="col-md-9">
+                                            <input type="email" class="form-control" id="txtEmailDN"
+                                                placeholder="Enter your username or email">
+                                            <span id="tbEmailDN" class="text-danger">*</span>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="txtMK" class="control-label col-xs-3">PASSWORD</label>
+                                        <div class="col-md-9">
+                                            <input type="text" class="form-control" id="txtMK"
+                                                placeholder="Enter your password">
+                                            <span id="tbMK" class="text-danger">*</span>
+                                        </div>
+                                    </div>
+
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" id="btnSaveDN" class="btn btn-success btn-block"
+                                    style="background-color: rgb(157, 0, 157);">Log in</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- QUẢNG CÁO -->
+    </div>
+    <!-- section -->
+    <section class="cart">
+        <div class="cartclose">
+            <i class="ti-close"></i>
+        </div>
+        <h2 style="color: rgb(53, 7, 145);">YOUR CART</h2>
+        <form action="">
+            <table>
+                <thead>
+                    <tr style="color:rgb(185, 59, 177);font-weight: bold;font-size: 15px;">
+                        <th>Product</th>
+                        <th style="text-align:center ;">Price</th>
+                        <th>Quantity</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
+            <button type="button" style="background-color: rgb(207, 53, 207);"><a href="../Main-html/MainTech.html"
+                    style="color:rgb(255, 255, 255);">Buy</a></button>
+        </form>
+    </section>
+    <script src="../js/cartshow.js"></script>
+    <div id="hang">
+        <h3>LAPTOP BRAND</h3>
+        <a href="../html-Brand/dell.html"><img src="../img/nhan-hang/dell.png" alt=""></a>
+        <a href="../html-Brand/asus.html"><img src="../img/nhan-hang/asus.png" alt=""></a>
+        <a href="../html-Brand/hp.html"><img src="../img/nhan-hang/hp.png" alt=""></a>
+        <a href="../html-SubList/listMac.html"><img src="../img/nhan-hang/mac.png" alt=""></a>
+        <a href="../html-Brand/lenovo.html"><img src="../img/nhan-hang/lenovo.png" alt=""></a>
+        <a href="../html-Brand/acer.html"><img src="../img/nhan-hang/acer.png" alt=""></a>
+    </div>
+    <div id="productList">
+        <h1 style="margin-left:660px;">LAPTOP DELL</h1>
+    </div>
+    <div id="section">
+        <div class="DanhSachLapTop">
+            <div class="listLap">
+                <div class="item-lap">
+                    <div class="slotlap">
+                        <div id="lapg">
+                            <img src="../img/Gaming/dell1.jpg" alt="ERROR" width="90%" class="img-lap" height="230px"
+                                usemap="#student1">
+                            <map name="student1">
+                                <area shape="rect" coords="0,1500,900,0" href="../html_ProductInfo/dellVostro5410.html"
+                                    alt="thongtinsanpham">
+                            </map>
+                        </div>
+                        <div class="body-lap">
+                            <h3 class="heading-lap">Dell Inspiron 15 3511</h3>
+                            <p class="desc-lap">Laptop Dell Inspiron 15 3511 i3 1115G4/4GB/256GB/Win11
+                                (P112F001CBL)</p>
+                            <p class="gia-lap"><span>23.990.000đ</span></p>
+                            <p style="text-decoration: line-through;font-size: small; text-align: center;">
+                                25.390.000<sup>đ</sup></p><br><br>
+                            <!-- nhân vào mua thì chuyển<sup>đ</sup>ến trang -->
+                            <button type="button" class="buy-lap-btn">Add to cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="item-lap">
+                    <div class="slotlap">
+                        <div id="lapg">
+                            <img src="../img/Office/OF1.jpg" alt="ERROR" width="90%" class="img-lap" height="230px"
+                                usemap="#student">
+                            <map name="student">
+                                <area shape="rect" coords="0,1500,900,0"
+                                    href="../html_ProductInfo/dellInspiron15i5.html" alt="thongtinsanpham">
+                            </map>
+                        </div>
+                        <div class="body-lap">
+                            <h3 class="heading-lap">Dell Vostro 3510</h3>
+                            <p class="desc-lap">Laptop Dell Vostro 3510 i5 1135G7/8GB/512GB/2GB
+                                MX350/OfficeHS/Win11</p>
+                            <p class="gia-lap"><span>20.490.000đ</span></p>
+                            <p style="text-decoration: line-through;font-size: small; text-align: center;">
+                                22.990.000<sup>đ</sup></p><br><br>
+                            <!-- nhân vào mua thì chuyển<sup>đ</sup>ến trang -->
+                            <button type="button" class="buy-lap-btn">Add to cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="item-lap">
+                    <div class="slotlap">
+                        <div id="lapg">
+                            <img src="../img/Office/OF3.jpg" alt="ERROR" width="90%" class="img-lap" height="230px"
+                                usemap="#office2">
+                            <map name="office2">
+                                <area shape="rect" coords="0,1500,900,0"
+                                    href="../html_ProductInfo/dellInspiron165620.html" alt="thongtinsanpham">
+                            </map>
+                        </div>
+                        <div class="body-lap">
+                            <h3 class="heading-lap">Dell Inspiron 16 5620</h3>
+                            <p class="desc-lap">Laptop Dell Inspiron 16 5620 i7
+                                1255U/8GB/512GB/OfficeHS/Win11
+                                (N6I7110W1)</p>
+                            <p class="gia-lap"><span>25.190.000đ</span></p>
+                            <p style="text-decoration: line-through;font-size: small; text-align: center;">
+                                26.990.000<sup>đ</sup></p><br><br>
+                            <!-- nhân vào mua thì chuyển<sup>đ</sup>ến trang -->
+                            <button type="button" class="buy-lap-btn">Add to cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="item-lap">
+                    <div class="slotlap">
+                        <div id="lapg">
+                            <img src="../img/dell/dell-gaming-alienware-m15-r6-i7-11800h-32gb-1tb-ssd-8gb-600x600.jpg"
+                                alt="ERROR" width="90%" class="img-lap" height="230px"usemap="#dell1">
+                                <map name="#dell1">
+                                    <area shape="rect" coords="0,1500,900,0" href="../html_ProductInfo/dellVostro5410.html"
+                                        alt="thongtinsanpham">
+                                </map>
+                        </div>
+                        <div class="body-lap">
+                            <h3 class="heading-lap">Dell Gaming Alienware m15 R6 i7</h3>
+                            <p class="desc-lap">Laptop Dell Gaming Alienware m15 R6 i7 11800H/32GB/1TB SSD/8GB
+                                RTX3070/240Hz/OfficeHS/Win11 (70272633)</p>
+                            <p class="gia-lap"><span>61.690.000đ</span></p>
+                            <p style="text-decoration: line-through;font-size: small; text-align: center;">
+                                62.990.000<sup>đ</sup></p><br><br>
+                            <!-- nhân vào mua thì chuyển<sup>đ</sup>ến trang -->
+                            <button type="button" class="buy-lap-btn">Add to cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <br>
+            <div class="listLap">
+                <div class="item-lap">
+                    <div class="slotlap">
+                        <div id="lapg">
+                            <img src="../img/dell/dell-gaming-alienware-m15-r6-i7-p109f001dbl-020322-112012-600x600.jpg"
+                                alt="ERROR" width="90%" class="img-lap" height="230px"usemap="#dell2">
+                                <map name="dell2">
+                                    <area shape="rect" coords="0,1500,900,0" href="../html_ProductInfo/dellVostro5410.html"
+                                        alt="thongtinsanpham">
+                                </map>
+                        </div>
+                        <div class="body-lap">
+                            <h3 class="heading-lap">Dell Gaming Alienware m15 R6 i7</h3>
+                            <p class="desc-lap">Laptop Dell Gaming Alienware m15 R6 i7 11800H/32GB/1TB SSD/6GB
+                                RTX3060/165Hz/Office H&S/Win11 (P109F001DBL)</p>
+                            <p class="gia-lap"><span>61.490.000đ</span></p>
+                            <p style="text-decoration: line-through;font-size: small;text-align: center;">
+                                65.990.000<sup>đ</sup></p><br><br>
+                            <!-- nhân vào mua thì chuyển<sup>đ</sup>ến trang -->
+                            <button type="button" class="buy-lap-btn">Add to cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="item-lap">
+                    <div class="slotlap">
+                        <div id="lapg">
+                            <img src="../img/dell/dell-gaming-g15-5511-i5-70266676-290322-110237-600x600.jpg"
+                                alt="ERROR" width="90%" class="img-lap" height="230px"usemap="#dell3">
+                                <map name="dell3">
+                                    <area shape="rect" coords="0,1500,900,0" href="../html_ProductInfo/dellVostro5410.html"
+                                        alt="thongtinsanpham">
+                                </map>
+                        </div>
+                        <div class="body-lap">
+                            <h3 class="heading-lap">Dell Gaming G15 5511 i5</h3>
+                            <p class="desc-lap">Laptop Dell Gaming G15 5511 i5 11400H/8GB/256GB/4GB
+                                RTX3050/120Hz/OfficeHS/Win11 (70266676)</p>
+                            <p class="gia-lap"><span>25.090.000đ</span></p>
+                            <p style="text-decoration: line-through;font-size: small; text-align: center;">
+                                27.990.000<sup>đ</sup></p><br><br>
+                            <!-- nhân vào mua thì chuyển<sup>đ</sup>ến trang -->
+                            <button type="button" class="buy-lap-btn">Add to cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="item-lap">
+                    <div class="slotlap">
+                        <div id="lapg">
+                            <img src="../img/dell/dell-gaming-g15-5515-r5-p105f004dgr-291121-114930-600x600.jpg"
+                                alt="ERROR" width="90%" class="img-lap" height="230px"usemap="#dell4">
+                                <map name="dell4">
+                                    <area shape="rect" coords="0,1500,900,0" href="../html_ProductInfo/dellVostro5410.html"
+                                        alt="thongtinsanpham">
+                                </map>
+                        </div>
+                        <div class="body-lap">
+                            <h3 class="heading-lap">Dell Gaming G15 5515 R5</h3>
+                            <p class="desc-lap">Laptop Dell Gaming G15 5515 R5 5600H/16GB/512GB/4GB
+                                RTX3050/120Hz/OfficeHS/Win11 (P105F004DGR)</p>
+                            <p class="gia-lap"><span>23.090.000đ</span></p>
+                            <p style="text-decoration: line-through;font-size: small; text-align: center;">
+                                25.990.000<sup>đ</sup></p><br><br>
+                            <!-- nhân vào mua thì chuyển<sup>đ</sup>ến trang -->
+                            <button type="button" class="buy-lap-btn">Add to cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="item-lap">
+                    <div class="slotlap">
+                        <div id="lapg">
+                            <img src="../img/dell/dell-inspiron-14-5415-r7-5700u-8gb-512gb-office-h-s-win11-tx4h61-600x600.jpg"
+                                alt="ERROR" width="90%" class="img-lap" height="230px"usemap="#dell5">
+                                <map name="dell5">
+                                    <area shape="rect" coords="0,1500,900,0" href="../html_ProductInfo/dellVostro5410.html"
+                                        alt="thongtinsanpham">
+                                </map>
+                        </div>
+                        <div class="body-lap">
+                            <h3 class="heading-lap">Dell Inspiron 14 5415 R7</h3>
+                            <p class="desc-lap">Laptop Dell Inspiron 14 5415 R7 5700U/8GB/512GB/Office H&S/Win11
+                                (TX4H61)</p>
+                            <p class="gia-lap"><span>21.190.000đ</span></p>
+                            <p style="text-decoration: line-through;font-size: small; text-align: center;">
+                                22.990.000<sup>đ</sup></p><br><br>
+                            <!-- nhân vào mua thì chuyển<sup>đ</sup>ến trang -->
+                            <button type="button" class="buy-lap-btn">Add to cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="listLap">
+                <div class="item-lap">
+                    <div class="slotlap">
+                        <div id="lapg">
+                            <img src="../img/dell/dell-vostro-3400-i5-yx51w6-thumb-600x600.jpg" alt="ERROR" width="90%"
+                                class="img-lap" height="230px"usemap="#dell6">
+                                <map name="dell6">
+                                    <area shape="rect" coords="0,1500,900,0" href="../html_ProductInfo/dellVostro5410.html"
+                                        alt="thongtinsanpham">
+                                </map>
+                        </div>
+                        <div class="body-lap">
+                            <h3 class="heading-lap">Dell Vostro 3400 i5</h3>
+                            <p class="desc-lap">Laptop Dell Vostro 3400 i5 1135G7/8GB/512GB/2GB MX330/OfficeHS/Win11
+                                (YX51W6)</p>
+                            <p class="gia-lap"><span>18.190.000đ</span></p>
+                            <p style="text-decoration: line-through;font-size: small; text-align: center;">
+                                20.990.000đ<sup>đ</sup></p><br><br>
+                            <!-- nhân vào mua thì chuyển<sup>đ</sup>ến trang -->
+                            <button type="button" class="buy-lap-btn">Add to cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="item-lap">
+                    <div class="slotlap">
+                        <div id="lapg">
+                            <img src="../img/dell/dell-vostro-5620-i5-v6i5001w1-thumb-1-600x600.jpg" alt="ERROR"
+                                width="90%" class="img-lap" height="230px"usemap="#dell7">
+                                <map name="dell7">
+                                    <area shape="rect" coords="0,1500,900,0" href="../html_ProductInfo/dellVostro5410.html"
+                                        alt="thongtinsanpham">
+                                </map>
+                        </div>
+                        <div class="body-lap">
+                            <h3 class="heading-lap">Dell Vostro 5620 i5</h3>
+                            <p class="desc-lap">Laptop Dell Vostro 5620 i5 1240P/8GB/256GB/OfficeHS/Win11 (V6I5001W1)
+                            </p>
+                            <p class="gia-lap"><span>21.790.000đ</span></p>
+                            <p style="text-decoration: line-through;font-size: small; text-align: center;">
+                                23.990.000<sup>đ</sup></p><br><br>
+                            <!-- nhân vào mua thì chuyển<sup>đ</sup>ến trang -->
+                            <button type="button" class="buy-lap-btn">Add to cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="item-lap">
+                    <div class="slotlap">
+                        <div id="lapg">
+                            <img src="../img/dell/dell-xps-13-9310-i5-1135g7-8gb-512gb-cap-office-600x600.jpg"
+                                alt="ERROR" width="90%" class="img-lap" height="230px"usemap="#dell8">
+                                <map name="dell8">
+                                    <area shape="rect" coords="0,1500,900,0" href="../html_ProductInfo/dellVostro5410.html"
+                                        alt="thongtinsanpham">
+                                </map>
+                        </div>
+                        <div class="body-lap">
+                            <h3 class="heading-lap">HP Pavilion X360 14 ek0055TU</h3>
+                            <p class="desc-lap">Laptop Dell XPS 13 9310 i5 1135G7/8GB/512GB/Cáp/Office H&S/Win11
+                                (70273578)</p>
+                            <p class="gia-lap"><span>39.990.000đ</span></p>
+                            <p style="text-decoration: line-through;font-size: small; text-align: center;">
+                                40.990.000<sup>đ</sup></p><br><br>
+                            <!-- nhân vào mua thì chuyển<sup>đ</sup>ến trang -->
+                            <button type="button" class="buy-lap-btn">Add to cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="item-lap">
+                    <div class="slotlap">
+                        <div id="lapg">
+                            <img src="../img/dell/dell-xps-13-plus-9320-i7-5cg56-thumb-600x600.jpg" alt="ERROR"
+                                width="90%" class="img-lap" height="230px"usemap="#dell9">
+                                <map name="dell9">
+                                    <area shape="rect" coords="0,1500,900,0" href="../html_ProductInfo/dellVostro5410.html"
+                                        alt="thongtinsanpham">
+                                </map>
+                        </div>
+                        <div class="body-lap">
+                            <h3 class="heading-lap">Dell XPS 13 Plus 9320 i7</h3>
+                            <p class="desc-lap">Laptop Dell XPS 13 Plus 9320 i7
+                                1260P/16GB/512GB/Touch/Cáp/OfficeHS/Win11 (5CG56)</p>
+                            <p class="gia-lap"><span>59.490.000đ</span></p>
+                            <p style="text-decoration: line-through;font-size: small; text-align: center;">
+                                61.990.000<sup>đ</sup></p><br><br>
+                            <!-- nhân vào mua thì chuyển<sup>đ</sup>ến trang -->
+                            <button type="button" class="buy-lap-btn">Add to cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script src="../js/cart.js"></script>
+    <div id="footer">
+        <div id="nhomThucHien">
+            <h5>MEMBERS OF TEAM</h5>
+            <h6><a href="#">Truong Minh Dat</a></h6>
+            <h6><a href="#">Phung Thi My Dieu</a></h6>
+        </div>
+        <div id="hoTroKhachHang">
+            <h5>CUSTUMER SERVICES</h5>
+            <h6><a href="../Main-html/MainTech.html">Shopping Online Tutorials</a></h6>
+            <h6><a href="../Main-html/MainTech.html">Payment Tutorials</a></h6>
+            <h6><a href="../Main-html/MainTech.html">Learn About Installment Purchase</a></h6>
+        </div>
+        <div id="chinhSachChung">
+            <h5>POLICY</h5>
+            <h6><a href="#">Warranty Policy</a></h6>
+            <h6><a href="#">Return Policy</a></h6>
+            <h6><a href="#">Operational Regulations</a></h6>
+            <h6><a href="#">Business Sales</a></h6>
+        </div>
+        <div id="socail">
+            <h5 style="padding-right: 30px;">SOCAIL MEDIA</h5>
+            <a href="https://www.facebook.com/profile.php?id=100046984711384"><i class="ti-facebook"></i></a>
+            <a href="#"><i class="ti-instagram"></i>
+                <a href="#"><i class="ti-twitter-alt"></i></a>
+                <a href="#"><i class="ti-skype"></i></a>
+                <br><br>
+                <a href="#"><i class="ti-yahoo"></i></a>
+                <a href="#"><i class="ti-wordpress"></i></a>
+                <a href="#"><i class="ti-youtube"></i></a>
+                <a href="#"><i class="ti-google"></i></a>
+        </div>
+        <div id="contact">
+            <h5>CONTACT FOR WORK</h5>
+            <p><a href="#">0925430713</p></a>
+            <p><a href="#">0866485827</p></a>
+        </div>
+    </div>
+
+    <!-- back to top -->
+    <div>
+        <button id="myBtnbtt" title="Lên đầu trang"><img src='../img/icon-256x256.png' title='Back to top' width='50px'
+                height="50px" /></button>
+        <script src="../js/backtotop.js"></script>
+    </div>
+</body>
+
+</html>
